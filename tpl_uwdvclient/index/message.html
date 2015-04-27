@@ -1,0 +1,14 @@
+{if $messageList['messageList']}
+<div class="offical_notice">
+	<h5>$messageList['title']</h5>
+	<div class="notice">
+		<div class="notice_list">
+			 <ul id="notices">
+				{foreach $messageList['messageList'] $val}
+                <li>{$val['content']}</li>
+				{/foreach}
+			</ul>
+		</div>
+	</div>
+</div>			
+{/if}
